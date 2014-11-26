@@ -1,22 +1,274 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+<head>
+-->
 <head>
   <meta charset='utf-8' />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Refresh" content="0; url=https://github.com/mackyle?tab=repositories" />
+  <script type="text/javascript">var NREUMQ=[];NREUMQ.f=function(){}</script>
 
-  <title>mackyle @ GitHub</title>
+  <title>mackyle projects</title>
 
   <style type="text/css">
     /* <![CDATA[ */
+    body {
+      margin-top: 1.0em;
+      background-color: white;
+      font-family: Times, "Times New Roman", serif;
+      color: black;
+    }
+    #container {
+      margin: 0 auto;
+      max-width: 90ex;
+      position: relative;
+    }
+    @media screen {
+      .last { margin-bottom: -1em;}
+      .aftermargin {
+        position: absolute;
+        height: 50%;
+        width: 1px;
+      }
+    }
+    h1 { font-size: 3.8em; color: black; margin-bottom: 0.1em; }
+    h1 .small { font-size: 0.4em; }
+    h1 a { text-decoration: none; }
+    h2, dt { font-size: 1.5em; color: black; }
+    h3, { /* text-align: center;*/ color: black; }
+    dd { /*font-size: 1.25em;*/ }
+    h1, h2, h3, dt, th { font-family: Helvetica, Arial, FreeSans, sans-serif; font-weight: normal; }
+    a { color: black; }
+    .description { font-size: 1.2em; margin-bottom: 1em; margin-top: 2em; font-style: italic; }
+    .download { float: right; }
+    tt, .nowrap { white-space: nowrap; }
+    pre, ttx { font-family: Menlo, Monaco, Consolas, Courier, "Courier New", monospace;}
+    pre { font-size: 90%; padding: 0.5em 1ex; border: thin dotted silver; }
+    hr { border: 0; width: 80%; border-bottom: thin solid silver; }
+    p { text-align: justify; }
+    p.left { text-align: left; }
+    .inset { margin-left: 1ex; margin-right: 1ex; }
+    .footer { text-align:center; padding-top:2em; font-style: italic; }
+    ul.ulnone { list-style-type: none; }
+    li { margin-top: 0.5em; margin-bottom: 0.5em; }
+    .indent { display: block; margin-left: 5ex; margin-right: 5ex; text-align: left; }
+    .spacer05 { display: inline-block; height: 1em; width: 0.5ex; }
+    .spacer25 { display: inline-block; height: 1em; width: 2.5ex; }
 
-    body { text-align: center; }
+    .nobreak { white-space: nowrap; }
+    .hash td { font-size: 80%; line-height: 1.0; font-family: monospace; }
+    .hash tr > td:first-child { text-align: right; }
+    .hash tr > td:first-child:after { content: ':'; }
+
+    table.download-list {
+      border-collapse: separate;
+      border-spacing: 1.25ex 0;
+      width: 100%;
+      margin-bottom: 0.5em;
+    }
+
+    table.download-list > * > tr > td:first-child,
+    table.download-list > * > tr > td:first-child + td,
+    table.download-list > * > tr > td:first-child + td + td,
+    table.download-list > * > tr > td:first-child + td + td + td {
+      white-space: nowrap;
+    }
+
+    tr.header th {
+      text-align: left;
+      border-bottom: thin solid black;
+    }
+    tr.separator {
+      height: 0.25em;
+    }
+
+    span.go:before {
+      position: relative;
+      margin-left: 0.25ex;
+      content: "\27a0";
+      top: +0.25ex;
+    }
+    span.go {
+      display: inline;
+      position: relative;
+      z-index: -1;
+      font-size: 1.5em;
+      background-color: white;
+    }
+    dt a {
+      text-decoration: none;
+      border-bottom: thin dotted silver;
+    }
+    dt a:focus {
+      outline: none
+    }
+    dt a:active {
+      border-bottom: thin solid red;
+      color: red;
+    }
+    dt {
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+    }
+
+    span.git {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      margin-right: 2px;
+      vertical-align: baseline;
+      background-repeat: no-repeat;
+      background-position: 0% 100%;
+      background-size: 1em 1em;
+      background-image: url(git-icon.png);
+    }
+
+    span.sol {
+      display: inline-block;
+      position: relative;
+      top: +2px;
+      width: 1em;
+      height: 1em;
+      margin-right: 2px;
+      vertical-align: baseline;
+      background-repeat: no-repeat;
+      background-position: 0% 100%;
+      background-size: 1em 1em;
+      background-image: url(sol-icon.png);
+    }
+
+    span.dbms {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      margin-right: 2px;
+      vertical-align: baseline;
+      background-repeat: no-repeat;
+      background-position: 0% 100%;
+      background-size: 1em 1em;
+      background-image: url(dbms-icon.png);
+    }
+
+    span.bug {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      margin-right: 2px;
+      vertical-align: baseline;
+      background-repeat: no-repeat;
+      background-position: 0% 100%;
+      background-size: 1em 1em;
+      background-image: url(bug-icon.png);
+    }
+
+    span.blocks {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      margin-right: 2px;
+      vertical-align: baseline;
+      background-repeat: no-repeat;
+      background-position: 0% 100%;
+      background-size: 1em 1em;
+      background-image: url(blocks-icon.png);
+    }
+
+    span.squishy {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      margin-right: 2px;
+      vertical-align: baseline;
+      background-repeat: no-repeat;
+      background-position: 0% 100%;
+      background-size: 1em 1em;
+      background-image: url(squishy-icon.png);
+    }
+
+    span.root {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      margin-right: 2px;
+      vertical-align: baseline;
+      background-repeat: no-repeat;
+      background-position: 0% 100%;
+      background-size: 1em 1em;
+      background-image: url(root-icon.png);
+    }
+
+    span.noicon {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      margin-right: 2px;
+    }
 
     /* ]]> */
   </style>
 </head>
 
-<body><p
->Please see <a href="https://github.com/mackyle?tab=repositories">https://github.com/mackyle?tab=repositories</a> instead.</p
-></body>
+<body>
+<div id="container">
+<h1>mackyle projects</h1>
+<div class="description">
+<p>Various projects I work on</p>
+</div>
+<p>Some get more love than others &#x2013; time permitting.  And some are not even listed here&#x2026;</p>
+
+<dl>
+
+<dt><a href="/git-osx-installer/"><span class="git"></span>Git OS X Installer<span class="go"></span></a></dt>
+<dd>Universal Git OS X Installer for Mac OS X 10.4.8 or later that includes translations and optionally
+curl, gpg and TopGit.  Notably send-email, imap-send and instaweb work out-of-the-box; SHA-256 and other SHA-2
+certificates are fully supported even on Mac OS X 10.4 and Mac OS X 10.5 and the system&#x2019;s
+standard keychains are used for the default root certificates.  See link for downloadable installer packages.</dd>
+
+<dt><a href="https://code.google.com/p/solwidget/"><span class="sol"></span>Sol Dashboard Widget<span class="go"></span></a></dt>
+<dd>Dashboard widget for OS X 10.4.3 or later that shows sunrise and sunset times for the current location or
+for anywhere in the world.</dd>
+
+<dt><a href="http://repo.or.cz/sqlite.git/"><span class="dbms"></span>Unofficial SQLite Git Mirror<span class="go"></span></a></dt>
+<dd>An unofficial mirror of the SQLite sources.  See the link for more information.  Also available from
+<a href="https://github.com/mackyle/sqlite">here</a>.  I do not work on SQLite, just making a mirror of the sources available
+via Git.</dd>
+
+<dt><a href="/blocksruntime/"><span class="blocks"></span>Blocks Runtime Library<span class="go"></span></a></dt>
+<dd>Allows one to use the <a href="http://clang.llvm.org/docs/BlockLanguageSpec.html">clang block C-language extension</a> on
+non-cupertino platforms.</dd>
+
+<dt><a href="/fakeroot/"><span class="root"></span>fakeroot utility<span class="go"></span></a></dt>
+<dd>Allows one to pretend to be root while creating various installer packages.
+An OS X installer is available for Mac OS X 10.4 and later.  See the link for details.</dd>
+
+<dt><a href="/build-cgdb/"><span class="bug"></span>cgdb OS X Installer<span class="go"></span></a></dt>
+<dd>An OS X installer for Mac OS X 10.4.8 or later for <a href="http://cgdb.github.io/">cgdb the curses debugger</a>.</dd>
+
+<dt><a href="http://mackyle.bitbucket.org/squishyball/"><span class="squishy"></span>squishyball OS X Installer<span class="go"></span></a></dt>
+<dd>An OS X installer for Mac OS X 10.4.8 or later for the squishyball audio comparison tool (A/B, A/B/X, X/X/Y testing).
+You can see a screen shot of it <a href="http://people.xiph.org/~xiphmont/demo/celt/demo.html#demo">here</a> and
+<a href="http://people.xiph.org/~xiphmont/demo/neil-young.html#toc_cbtpeadb">here</a>.</dd>
+
+<dt><a href="http://repo.or.cz/sudo-osx-update.git"><span class="noicon"></span>sudo update for OS X<span class="go"></span></a></dt>
+<dd>A convenient way to build and install a version of sudo (1.7.10p7) that does not suffer from the authentication bypass bug on older Mac OS X
+systems but contains all the standard OS X sudo tweaks.  This is not needed unless you&#x2019;re running 10.7.0-10.7.4, 10.8.0-10.8.4 (and for some reason cannot upgrade to
+10.7.5 or 10.8.5) or are running a version prior to 10.7.0 as updates have been issued for 10.7.5, 10.8.5 and 10.9.0 and later.  See the link for more information.</dd>
+
+<dt><a href="/xar/"><span class="noicon"></span>eXentensible ARchiver (XAR)<span class="go"></span></a></dt>
+<dd>An updated version of the xar archiver with primitive signing capability and many bug fixes.
+Safari extensions are signed xar archives.</dd>
+
+<dt><a href="/striptease/"><span class="noicon"></span>strip tease tool<span class="go"></span></a></dt>
+<dd>An updated version (with downloadable binaries) of the strip tool (called tease) originally from the Camino browser
+project that can strip signatures (and other things) out of executables.  See the link for more information.</dd>
+
+<dt><a href="/a52codec/"><span class="noicon"></span>Perian A52 Codec with pass through bug fix<span class="go"></span></a></dt>
+<dd>The bug fix to make AC-3 pass through work has been picked up but is not in any released version of Perian.  If you need
+working AC-3 (aka A52) pass through support with Perian you can download a pre-built copy of A52Codec.component with the
+fix.  See the link for details.</dd></dl>
+
+<span class="aftermargin"></span></div></body>
+<!--
+</body>
+-->
 </html>
